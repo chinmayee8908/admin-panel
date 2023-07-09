@@ -1,0 +1,32 @@
+.sidebar-container{
+    width:300px;
+    background-color: aliceblue;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgb(23, 21, 26);
+    }
+    .sidebar-header{
+        height: 200px;
+        width:300px;
+        background-color: rgb(43, 23, 62);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    img{
+        height: 90px;
+        width:100px;
+        border-radius: 40px;
+        }
+     .sidebar-container ul li{
+      list-style: none;
+     }
+     .sidebar-container li{
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 0 0 rgb(239, 234, 234);
+     }
+     h3{
+      font-size: 30px;
+      font-weight: bold;
+      margin-left: 20px;
+     }
