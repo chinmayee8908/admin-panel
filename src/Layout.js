@@ -1,13 +1,21 @@
 import { Outlet, Link } from "react-router-dom";
-import Sidebar from "./Homepage/Sidebar"
-import Navbar from "./Homepage/Navbar"
+import Sidebar from "./Dashboard/Sidebar"
+import Navbar from "./Dashboard/Navbar"
+import "./Layout.css"
 import React from 'react'
 const Layout = () => {
   return (
     <>
-<Sidebar/>
-<Navbar/>
-<Outlet/>
+    <div style={{display:"flex", flexDirection:"column"}}>
+      <div className="header"><Navbar/></div>
+      <div style={{display:"flex"}}>
+        <div className="sidebar"><Sidebar/></div>
+        <div className="outlet"><Outlet/></div>
+      </div>
+    </div>
+
+
+
     </>
   )
 }

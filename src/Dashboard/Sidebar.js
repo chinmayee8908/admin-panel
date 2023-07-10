@@ -11,7 +11,10 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import { useNavigate } from 'react-router-dom';
 const Sidebar = () => {
   const navigate=useNavigate();
-  const handlechange=()=>{
+  const handleDashboard=()=>{
+    navigate("/")
+  }
+  const handleCategory=()=>{
     navigate("/category")
   }
   return (
@@ -22,11 +25,11 @@ const Sidebar = () => {
         </div>
         </div>
         <ul>
-        <li>
+        <li onClick={handleDashboard}>
           <span><DashboardIcon className='icons'/></span>
           <h3>Dashboard</h3>
         </li>
-        <li onClick={handlechange}>
+        <li onClick={handleCategory}>
           <span><CategoryIcon className='icons'/></span>
           <h3>Category</h3>
         </li>

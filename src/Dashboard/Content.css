@@ -1,0 +1,50 @@
+.dashboard-content{
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 2px 5px rgb(243, 238, 238);
+    border-radius: 10px;
+    height: 660px;
+    width: 1180px;
+}
+.container{
+    display: flex;
+    height: 110px;
+    background-color:aliceblue;
+    width: 350px;
+    align-items: center;
+    box-shadow: 0 0 2px 0 black;
+    justify-content: space-between;
+}
+
+.container img{
+    border-radius: 100px;
+    margin: 10px;
+
+}
+.container h4{
+   margin-top: 0%;
+    color: rgb(11, 13, 14);
+
+}
+.container:hover{
+    background-color: rgb(102, 115, 231);
+    
+}
+.container span{
+    font-size: 30px;
+    width: 50px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+/* .carousel{ */
+    /* height: 500px;
+    width: 900px;
+    background-color: black;
+    margin: 40px;
+    margin-left: 10px;
+} */

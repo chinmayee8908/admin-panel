@@ -1,0 +1,9 @@
+.category-container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 2px 5px rgb(243, 238, 238);
+    border-radius: 10px;
+    height: 660px;
+    width: 1180px;
+    background-color: aliceblue;
+}

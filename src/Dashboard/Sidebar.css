@@ -1,16 +1,17 @@
 .sidebar-container{
-    width:300px;
-    background-color: aliceblue;
-    position: fixed;
-    box-shadow: 0 4px 8px 0 rgb(23, 21, 26);
+    width:250px;
+    background-color:aliceblue;
+      box-shadow: 0 4px 8px 0 rgb(23, 21, 26);
+  height: 100%;
     }
     .sidebar-header{
         height: 200px;
-        width:300px;
-        background-color: rgb(43, 23, 62);
+        width:250px;
+        background-image: linear-gradient(to right,white, white,blue);
         display: flex;
         justify-content: center;
         align-items: center;
+       
       }
     img{
         height: 90px;
@@ -19,6 +20,7 @@
         }
      .sidebar-container ul li{
       list-style: none;
+      height: 78px;
      }
      .sidebar-container li{
       display: flex;
@@ -26,7 +28,12 @@
       box-shadow: 0 2px 0 0 rgb(239, 234, 234);
      }
      h3{
-      font-size: 30px;
+      cursor: pointer;
+      font-size: 25px;
       font-weight: bold;
       margin-left: 20px;
      }
+     .sidebar-container li :hover
+    {
+    background-color: rgb(246, 205, 152);
+    }

@@ -1,0 +1,30 @@
+.top-bar{
+    height:60px;
+    background-image: linear-gradient(to right,rgb(245, 248, 247),rgb(26, 12, 181));;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px 0 black;
+    display: flex;
+    margin-right: 25px;
+    justify-content: space-between;
+}
+.top-bar:hover{
+    background-color: rgb(151, 142, 154);
+}
+.top-bar span{
+    margin: 5px;
+    color:rgb(22, 25, 26);
+    font-size: 30px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.top-bar h3{
+    margin-top: 25px;
+color: rgb(125, 34, 11);
+font-family:'Times New Roman', Times, serif;
+}
+
+.user img{
+    height: 60px;
+margin-left: 890px;
+padding: 7px;
+}

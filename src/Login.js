@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
   const navigate=useNavigate();
   const login=()=>{
-    navigate("/dashboard")
+    navigate("/")
   }
   return (
     <div className='wrapper'>
