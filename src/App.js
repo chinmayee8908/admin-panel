@@ -7,6 +7,7 @@ import Author from "./Author/Author";
 import Books from "./Books/Books"
 import Comment from "./Comment/Comment"
 import User from "./user/User"
+import Setting from"./Settings/Setting"
 function App() {
   return (
 <BrowserRouter>
@@ -18,7 +19,7 @@ function App() {
      <Route path='comment' element={<Comment/>}/>
    <Route path='user' element={<User/>}/> 
    <Route path='author' element={<Author/>}/> 
-   {/* <Route path='setting' element={<Setting/>}/>  */}
+   <Route path='setting' element={<Setting/>}/> 
   </Route>
   <Route path='/login' element={<Login/>}/>
 </Routes>

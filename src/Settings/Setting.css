@@ -1,4 +1,4 @@
-.comment-container{
+.setting-container{
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 2px 5px rgb(243, 238, 238);
@@ -7,7 +7,7 @@
     width: 1270px;
     background-color: aliceblue;
 }
-.comment-header{
+.setting-header{
   height: 80px;
   font-size: 15px;
   margin: 10px;

@@ -17,6 +17,21 @@ const Sidebar = () => {
   const handleCategory=()=>{
     navigate("/category")
   }
+  const handleBooks=()=>{
+    navigate("/books")
+  }
+  const handleComment=()=>{
+    navigate("/comment")
+  }
+  const handleUser=()=>{
+    navigate("/user")
+  }
+  const handleAuthor=()=>{
+    navigate("/author")
+  }
+  const handleSetting=()=>{
+    navigate("/setting")
+  }
   return (
     <div className='sidebar-container'>
     <div className='sidebar-header'>
@@ -33,23 +48,23 @@ const Sidebar = () => {
           <span><CategoryIcon className='icons'/></span>
           <h3>Category</h3>
         </li>
-        <li>
+        <li onClick={handleBooks}>
           <span><MenuBookIcon className='icons'/></span>
           <h3>Books</h3>
         </li>
-        <li>
+        <li onClick={handleComment}>
           <span><CommentIcon className='icons'/></span>
           <h3>Comment</h3>
         </li>
-        <li>
+        <li onClick={handleUser}>
           <span><Person4Icon className='icons'/></span>
           <h3>Users</h3>
         </li>
-        <li>
+        <li onClick={handleAuthor} >
           <span><AccountBoxIcon className='icons'/></span>
           <h3>Author</h3>
         </li>
-        <li>
+        <li  onClick={handleSetting}>
           <span><SettingsIcon className='icons'/></span>
           <h3>Settings</h3>
         </li>

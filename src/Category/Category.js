@@ -5,32 +5,36 @@ import { useState, useEffect } from 'react';
 const Category = () => {
     const [record, setRecord] = useState([]);
     useEffect(() => {
-      fetch(`http://ebook.heyaskme.in//api.php?cat_list`,{
-        method: "POST",
-        mode: "cors",
-        credentials: "include",
-        headers: {
-          "Content-Type": "application/json"}
-        })
+      fetch(`https://ebook.heyaskme.in//api.php?cat_list`,{
+        headers:{
+          "Access-Control-Allow-Origin":"*"
+        }
+      })
         .then((response) => response.json())
         .then(response => {
           console.log("this is response", response);
           setRecord(response.EBOOK_APP);
         })
-        .catch(err => console.log(err))
+        .catch(err =>
+          {
+            console.log(err)} 
+            )
     }, [])
     console.log("data" ,record);
     return (
       <div className='category-container'>
+        <div className='category-header'>
+          <span>Manage Categories</span>
+          <button>Add Category</button>
+        </div>
         <div className='category-tabel'>
           <Table striped bordered hover variant="black">
             <thead>
-              <tr>
+              <tr className='table-header'>
                 <th>Category</th>
                 <th>Action</th>
               </tr>
             </thead>           
-          
             {record.map((item, index)=>{
       return <tr key={index}>
         <td>{item.category_name}</td>

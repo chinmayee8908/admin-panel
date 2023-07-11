@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Navbar.css"
 import userimage from "../asset/user.png"
-import Content from './Content'
 
 const Navbar = () => {
     return (

@@ -1,14 +1,16 @@
 .top-bar{
     height:60px;
-    background-image: linear-gradient(to right,rgb(245, 248, 247),rgb(26, 12, 181));;
+    background-image: linear-gradient(to right,rgb(223, 228, 236),rgb(38, 38, 62));;
     border-radius: 6px;
     box-shadow: 0 2px 2px 0 black;
     display: flex;
     margin-right: 25px;
     justify-content: space-between;
+    cursor: pointer;
+    
 }
 .top-bar:hover{
-    background-color: rgb(151, 142, 154);
+    background-color: rgb(187, 178, 142);
 }
 .top-bar span{
     margin: 5px;
@@ -24,7 +26,7 @@ font-family:'Times New Roman', Times, serif;
 }
 
 .user img{
-    height: 60px;
+height: 60px;
 margin-left: 890px;
 padding: 7px;
 }

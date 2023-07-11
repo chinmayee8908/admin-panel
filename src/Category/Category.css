@@ -3,7 +3,26 @@
     flex-direction: column;
     box-shadow: 0 2px 2px 5px rgb(243, 238, 238);
     border-radius: 10px;
-    height: 660px;
-    width: 1180px;
+    height: 90%;
+    width: 1270px;
     background-color: aliceblue;
+}
+.category-header{
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+  font-size: 20px;
+}
+.category-header>span{
+    color: rgb(54, 54, 60);
+    margin: 20px;
+}
+.category-header >button{
+    height: 40px;
+    width:150px;
+    background-color: rgb(49, 49, 120);
+    color: white;
+    margin-right: 10px;
 }

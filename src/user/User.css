@@ -1,0 +1,42 @@
+.user-container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 2px 5px rgb(243, 238, 238);
+    border-radius: 10px;
+    height: 90%;
+    width: 1270px;
+    background-color: aliceblue;
+}
+.user-header{
+    display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+  font-size: 15px;
+}
+.user-header>span{
+    margin: 15px;
+    font-size: 20px;
+    color: rgb(34, 34, 85);    
+}
+.searchbox-button{
+display: flex;
+margin-right: 10px;
+}
+input{
+    position: absolute;
+    height: 40px;
+    width:200px;
+    border-radius: 10px;
+
+}
+.searchbox-button>button{
+    position: relative;
+    background-color: rgb(40, 40, 134);
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    width:150px;
+
+}
