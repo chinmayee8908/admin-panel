@@ -4,13 +4,12 @@
     flex-direction: column;
     box-shadow: 0 2px 2px 5px rgb(243, 238, 238);
     border-radius: 10px;
-    height: 90%;
+    height: 100%;
     width: 1270px;
 }
 .containers{
     display: flex;
-    height: 90px;
-    background-color:rgb(226, 229, 231);
+    height: 100px;
     width: 300px;
     align-items: center;
     box-shadow: 0 0 2px 0 rgb(179, 166, 166);
@@ -19,7 +18,7 @@
 }
 
 .containers img{
-    height: 88px;
+    height: 98px;
     border-radius: 100px;
 }
 .containers h4{
@@ -30,14 +29,14 @@
 
 }
 .containers:hover{
-    background-color: rgb(102, 115, 231);
+    transform: scale(1.1);
     
 }
 .containers span{
     color:white;
     font-size: 30px;
     width: 70px;
-    height: 90px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,11 +52,9 @@ margin-left: 1160px;
 }
 .footer-icon{
    color: rgb(10, 30, 56);
+
 }
-/* .carousel{ */
-    /* height: 500px;
-    width: 900px;
-    background-color: black;
-    margin: 40px;
-    margin-left: 10px;
-} */
+.footer-icon:hover{
+    transform: scale(1.1);
+}
+

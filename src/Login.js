@@ -9,14 +9,12 @@ const Login = () => {
     navigate("/")
   }
   return (
-    <div className='wrapper'>
+    <div className='login-container'>
       <div className='form-body'>
         <h4>My Library</h4>
-        <div className='input-box'><span className='icon'><PersonIcon /></span><input type='box' placeholder='Username'required/>
-        </div>
-        <div className='input-box'><span className='icon'><LockIcon /></span><input type='password' placeholder='Password' required/>
-        </div>
-        <button type='submit' className='login-btn' onClick={login}>Login</button>
+       <div style={{display:'flex'}}> <PersonIcon  className='login-icon'/><input type='text'  className="box"placeholder='UserName'/></div>
+       <div style={{display:'flex'}}><LockIcon className='login-icon'/> <input type='text'className="box" placeholder='Password'/></div>
+        <input type='submit'className='submit' value="Login" onClick={login}/>
       </div>
     </div>
   )

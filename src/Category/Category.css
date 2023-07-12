@@ -3,7 +3,7 @@
     flex-direction: column;
     box-shadow: 0 2px 2px 5px rgb(243, 238, 238);
     border-radius: 10px;
-    height: 90%;
+    height: 100%;
     width: 1270px;
     background-color: aliceblue;
 }
@@ -19,10 +19,42 @@
     color: rgb(54, 54, 60);
     margin: 20px;
 }
-.category-header >button{
+.category-header>button{
     height: 40px;
     width:150px;
     background-color: rgb(49, 49, 120);
     color: white;
-    margin-right: 10px;
+    margin-right: 50px;
+    font-size: 15px;
+    }
+    table{
+        border: 1px solid black;
+        height: 100%;
+        
+        }
+    .category-table{
+    height: 100%;
+    margin: 10px;
+    }
+    tr{
+        border: 1px solid rgb(212, 210, 210);
+    }
+    .th1{
+        width: 900px;       
+    }
+    .th1 .th2{
+        border:1px solid rgb(144, 137, 137)
+    }
+    .td1{
+        border:1px solid rgb(190, 182, 182)
+    }
+    tr{
+        height: 10px;
+    }
+.action{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border:1px solid rgb(199, 191, 191)
 }
