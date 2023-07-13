@@ -43,6 +43,7 @@ const Category = () => {
                </Table>
         </div>
       </div>
+     
     )
   }
 

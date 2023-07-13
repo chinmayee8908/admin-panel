@@ -1,4 +1,8 @@
 import { BrowserRouter, Route ,Routes} from 'react-router-dom';
+import { useState, createContext } from "react";
+import ReactDOM from "react-dom/client";
+
+
 import Login from './Login';
 import Layout from './Layout';
 import Content from './Dashboard/Content';
@@ -8,7 +12,9 @@ import Books from "./Books/Books"
 import Comment from "./Comment/Comment"
 import User from "./user/User"
 import Setting from"./Settings/Setting"
+import Register from './Register/Register';
 function App() {
+  const UserContext = createContext()
   return (
 <BrowserRouter>
 <Routes>
@@ -22,6 +28,7 @@ function App() {
    <Route path='setting' element={<Setting/>}/> 
   </Route>
   <Route path='/login' element={<Login/>}/>
+  <Route path='/register' element={<Register/>}/>
 </Routes>
 </BrowserRouter> 
   )

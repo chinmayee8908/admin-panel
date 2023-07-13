@@ -17,7 +17,7 @@
 .top-bar span{
     margin: 5px;
     color:rgb(22, 25, 26);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
@@ -28,7 +28,9 @@ font-family:'Times New Roman', Times, serif;
 }
 
 .user img{
+    width: 90px;
 height: 60px;
 margin-left: 890px;
 padding: 7px;
+border-radius: 50%;
 }

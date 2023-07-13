@@ -3,6 +3,7 @@ import "./Author.css"
 import Table from 'react-bootstrap/Table';
 import { useState, useEffect } from 'react';
 import SearchRoundedIcon from"@mui/icons-material/SearchRounded"
+import { blue } from '@mui/material/colors';
 const Author = () => {
   const [author, setAuthor] = useState([]);
     useEffect(() => {
@@ -31,7 +32,7 @@ const Author = () => {
       <div className='author-table'>
       <Table >
             <thead>
-              <tr >
+              <tr style={{border:"1px solid grey"}} >
                 <th >Author</th>
                 <th>Author image</th>
                 <th>Action</th>
@@ -41,8 +42,8 @@ const Author = () => {
       return <tr key={index}>
         <td>{item.author_name}</td>
         <td><img src={item.author_image}/></td>
-        <td>
-          <button>Edit</button>
+        <td style={{textAlign:'center'}}>
+          <button style={{ backgroundColor:"blue"}}>Edit</button>
         <button>Delet</button>
         </td>
           </tr>})}
