@@ -41,7 +41,7 @@ const Author = () => {
             {author.map((item, index)=>{
       return <tr key={index}>
         <td>{item.author_name}</td>
-        <td><img src={item.author_image}/></td>
+        <td><img src={`http://ebook.heyaskme.in/images/thumbs/${item.author_image}`}/></td>
         <td style={{textAlign:'center'}}>
           <button style={{ backgroundColor:"blue"}}>Edit</button>
         <button>Delet</button>
